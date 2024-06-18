@@ -9,8 +9,10 @@ import AlbumLayout from '@/components/Albums/AlbumLayout.vue';
 <template>
 	<main>
 		<SectionTemplate>
-			<ProfileSection name="Parker Piedmont"
-				title="Composer, Producer, Programmer - Seattle" />
+			<ProfileSection
+				name="Parker Piedmont"
+				title="Composer, Producer, Programmer - Seattle"
+			/>
 		</SectionTemplate>
 
 		<SectionTemplate name="New Album Incoming! Date TBA"></SectionTemplate>
@@ -18,6 +20,8 @@ import AlbumLayout from '@/components/Albums/AlbumLayout.vue';
 		<SectionTemplate name="Evolvy Bugs">
 			<AlbumLayout />
 		</SectionTemplate>
+
+		<SectionTemplate name="Contact"></SectionTemplate>
 	</main>
 </template>
 

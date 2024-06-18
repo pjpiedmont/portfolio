@@ -19,11 +19,11 @@ const socials: Social[] = [
 		icon: 'envelope-fill',
 		id: 0,
 	},
-	{
-		href: 'https://www.linkedin.com/in/parkerpiedmont/',
-		icon: 'linkedin',
-		id: 1,
-	},
+	// {
+	// 	href: 'https://www.linkedin.com/in/parkerpiedmont/',
+	// 	icon: 'linkedin',
+	// 	id: 1,
+	// },
 	{
 		href: 'https://discordapp.com/users/232967632897179648',
 		icon: 'discord',
@@ -34,11 +34,11 @@ const socials: Social[] = [
 		icon: 'instagram',
 		id: 3,
 	},
-	{
-		href: 'https://twitter.com/parkerpiedmont',
-		icon: 'twitter',
-		id: 4,
-	},
+	// {
+	// 	href: 'https://twitter.com/parkerpiedmont',
+	// 	icon: 'twitter',
+	// 	id: 4,
+	// },
 ];
 </script>
 
@@ -50,25 +50,28 @@ const socials: Social[] = [
 			<div class="col-12 text-center text-lg-start">
 				<h1 class="display-4 fw-bold lh-1 bg-accent">Parker Piedmont</h1>
 				<hr />
-				<p class="lead">Composer, Producer, Programmer - Seattle</p>
-				<p>
-					I'm a composer, producer, and programmer looking for work in
-					music and
-					audio for games. I have degrees in music performance and
-					computer
-					engineering and experience in writing and implementing game
-					music. I
-					also have experience in mixing. My combination of artistic and
-					technical skills has helped me cultivate a passion for solving
-					complex
-					and creative problems. In my free time, I can be found playing
-					saxophone (especially bari sax) and writing music for
-					synthesizers.
+				<p class="lead">Electro-Acoustic Music Enthusiast</p>
+				<p>Hi, I'm Parker! I like to make music. Obviously. The music I make is
+					sort of a mash-up of elements from jazz, synthwave, and video game
+					soundtracks. (Let me know if you can describe it more succinctly than
+					that. I never quite know how to describe my music when someone asks me
+					about it.) I'm especially fond of
+					synthesizers, which perfectly blend my backgrounds in computer
+					engineering and saxophone performance. In my free time, I can be found
+					rearranging and redecorating just about everything in my house. As
+					they say, <em>"if it ain't broke, break it."</em>
 				</p>
-				<p class="mb-lg-0">
+				<p>I love film and game soundtracks, and I've even
+					written a game soundtrack in the past! If you are in need of a score
+					for your project and vibe with my music, please don't hesitate to
+					reach out to me at one of the social links below. I'd love to work
+					with you!
+				</p>
+				<a id="contact" class="lead" href="#">Contact Me</a>
+				<!-- <p class="mb-lg-0">
 					<ProfileSocial v-for="social in socials" :href="social.href"
 						:icon="social.icon" :key="social.id" />
-				</p>
+				</p> -->
 			</div>
 		</div>
 	</div>
@@ -86,35 +89,52 @@ const socials: Social[] = [
 }
 
 .container {
-	background-color: $color-primary;
+	// background-color: $color-primary;
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 h1,
 p {
-	color: black;
+	color: white;
 }
 
 h1 {
-	font-family: $font-heading;
+	font-family: 'Euclid Circular A';
 }
 
 .lead {
-	font-family: $font-subheading;
+	font-family: 'Euclid Circular A';
 }
 
 p {
-	font-family: $font-body;
+	font-family: 'Euclid Circular A Light';
 }
 
 hr {
-	background-color: $color-background;
+	background-color: white;
 	color: $color-background;
-	opacity: 1;
+	opacity: 0.25;
 	margin-left: auto;
 	margin-right: auto;
 	height: 2px;
-	border: 1px solid $color-background;
+	border: 1px solid white;
 	border-radius: 1px;
 	overflow: hidden;
+}
+
+#contact {
+	display: block;
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+	&:hover {
+		color: black;
+		background-color: white;
+	}
 }
 </style>
