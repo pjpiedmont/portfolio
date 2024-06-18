@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
+import DevView from '@/views/DevView.vue';
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,12 @@ const router = createRouter({
 			alias: ['/business-card'],
 			name: 'QR Code',
 			component: () => import('../views/QRCodeView.vue'),
+		},
+		{
+			path: '/dev',
+			alias: [],
+			name: 'Dev',
+			component: DevView,
 		},
 		{
 			path: '/:pathMatch(.*)*',

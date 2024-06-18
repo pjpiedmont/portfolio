@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SectionTemplate from '@/components/SectionTemplate.vue';
 import ProfileSection from '@/components/Profile/ProfileSection.vue';
+import AlbumLayout from '@/components/Albums/AlbumLayout.vue';
 </script>
 
 <!----------------------------------------------------------------------------->
@@ -8,13 +9,15 @@ import ProfileSection from '@/components/Profile/ProfileSection.vue';
 <template>
 	<main>
 		<SectionTemplate>
-			<ProfileSection
-				name="Parker Piedmont"
-				title="Composer, Producer, Programmer - Seattle"
-			/>
+			<ProfileSection name="Parker Piedmont"
+				title="Composer, Producer, Programmer - Seattle" />
 		</SectionTemplate>
 
-		<SectionTemplate name="Evolvy Bugs"> </SectionTemplate>
+		<SectionTemplate name="New Album Incoming! Date TBA"></SectionTemplate>
+
+		<SectionTemplate name="Evolvy Bugs">
+			<AlbumLayout />
+		</SectionTemplate>
 	</main>
 </template>
 

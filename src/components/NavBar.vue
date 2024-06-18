@@ -13,7 +13,7 @@
 
 .navbar {
 	// 	height: calc(var(--nav-height) - 1px);
-	// 	background-color: var(--main-bg-color);
+	background-color: $color-background;
 	border-bottom: 1px solid $color-primary;
 
 	div {

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import ProfileSocial from '@/components/Profile/ProfileSocial.vue';
 
-defineProps<{
-	name: string;
-	title: string;
-	description: string;
-}>();
+// defineProps<{
+// 	name: string;
+// 	title: string;
+// 	description: string;
+// }>();
 
 export interface Social {
 	href: string;

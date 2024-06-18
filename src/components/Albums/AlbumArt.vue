@@ -8,13 +8,21 @@ defineProps<{
 <!----------------------------------------------------------------------------->
 
 <template>
-	<img :src="src" :alt="alt">
+	<div class="container p-0">
+		<img :src="src" :alt="alt">
+	</div>
 </template>
 
 <!----------------------------------------------------------------------------->
 
 <style scoped lang="scss">
 @import '@/assets/scss/variables/colors.scss';
+
+div {
+	overflow: hidden;
+	border: 1px solid var(--accent-bg-color);
+	border-radius: 10%;
+}
 
 img {
 	max-width: 100%;
