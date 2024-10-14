@@ -3,8 +3,8 @@
 <!----------------------------------------------------------------------------->
 
 <template>
-	<div class="col-lg-12 px-0" id="hero">
-		<h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+	<div class="col-lg-12 px-0 rounded-4 overflow-hidden border" id="hero">
+		<h1 class="display-4">Parker Piedmont</h1>
 		<p class="lead my-3">Multiple lines of text that form the lede, informing
 			new readers quickly and efficiently about what’s most interesting in this
 			post’s contents.</p>
@@ -23,5 +23,9 @@
 	background-repeat: no-repeat;
 	height: 50vh;
 	color: black;
+}
+
+h1 {
+	font-family: 'Euclid Circular A';
 }
 </style>

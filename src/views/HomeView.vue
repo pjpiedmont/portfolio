@@ -8,7 +8,7 @@ import HeroTemplate from '@/components/HeroTemplate.vue';
 <!----------------------------------------------------------------------------->
 
 <template>
-	<main class="container">
+	<main class="container py-5">
 		<HeroTemplate />
 
 		<SectionTemplate>
